@@ -10,10 +10,73 @@ $susy: (
 	global-box-sizing: border-box
 );
 
+* {
+	outline: 0 none;
+}
+
 body {
 	overflow-y: scroll;
 	font-family: sans-serif;
 	line-height: 1.6em;
 	color: $text-color-dark;
 	margin: 0;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.header-main {
+	@include clearfix;
+	padding: 15px 0;
+	background: #2c4055;
+	form {
+		float: left;
+		margin: 0px 10px 3px 50px;
+		input[type="text"] {
+			min-width: 250px;
+			padding: 8px 10px;
+			border: 0 none;
+			border-radius: 3px;
+			margin: 0 8px;
+			font-size: 18px;
+		}
+		button {
+			border: 0 none;
+			border-radius: 3px;
+			padding: 10px;
+			color: #fff;
+			background: #35c187;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: bold;
+			&:hover {
+				background: #27a370;
+			}
+		}
+	}
+	a.login {
+		float: right;
+		color: #fff;
+		text-decoration: none;
+		line-height: 40px;
+		&:hover {
+			color: #35c187;
+		}
+	}
+}
+
+.logo {
+	float: left;
+	img {
+		max-width: 250px;
+		height: auto;
+	}
+}
+
+h2 {
+	font-size: 32px;
+	color: #2c4055;
+	font-weight: normal;
 }

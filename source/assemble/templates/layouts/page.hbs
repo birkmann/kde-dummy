@@ -1,6 +1,16 @@
 {{>html-header}}
-	<div class="page-content">
-		<!--h2>{{this.page.title}}</h2-->
-		{{>body}}
-	</div>
+	<header class="header-main">
+		<div class="wrapper">
+			<a href="index.html" class="logo">
+				<img src="img/logo.png" alt="KennstDuEinen?">
+			</a>
+			<form action="">
+				<input type="text" placeholder="Was?" class="what">
+				<input type="text" placeholder="Wo?" class="where">
+				<button type="submit">Finden</button>
+			</form>
+			<a href="#" class="login">Login</a>
+		</div>
+	</header>
+	{{>body}}
 {{>html-footer}}
