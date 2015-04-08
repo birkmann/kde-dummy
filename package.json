@@ -1,25 +1,25 @@
 {
-  "name": "grunt-template",
+  "name": "boilerplate",
   "version": "0.0.1",
-  "description": "A simple front-end template.",
+  "description": "A simple front-end boilerplate.",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Refugee/template.git"
+    "url": "https://github.com/Refugee/boilerplate.git"
   },
   "keywords": [
     "grunt",
-    "template"
+    "boilerplate"
   ],
   "author": "Rafael Birkmann",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Refugee/template/issues"
+    "url": "https://github.com/Refugee/boilerplate/issues"
   },
-  "homepage": "https://github.com/Refugee/template",
+  "homepage": "https://github.com/Refugee/boilerplate",
   "devDependencies": {
     "grunt": "^0.4.5",
     "assemble": "^0.4.42",
