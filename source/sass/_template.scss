@@ -22,6 +22,12 @@ body {
 	margin: 0;
 }
 
+h2 {
+	font-size: 32px;
+	color: #2c4055;
+	font-weight: normal;
+}
+
 .wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -76,8 +82,19 @@ body {
 	}
 }
 
-h2 {
-	font-size: 32px;
-	color: #2c4055;
-	font-weight: normal;
+.footer-main {
+	background: #2c4055;
+	padding: 50px 0;
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+		}
+	}
+
 }
