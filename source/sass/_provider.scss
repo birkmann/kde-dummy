@@ -1,0 +1,38 @@
+.page-provider {
+	header {
+		@include clearfix;
+		.title {
+			@include breakpoint(tablet) {
+				float: left;
+				margin: 20px;
+			}
+			h2 {
+				line-height: 1.2em;
+  				font-size: 36px;
+  				margin: 0;
+			}
+			.venue {
+				color: #888;
+			}
+		}
+	}
+	.gmap {
+		padding: 10px;
+		@include breakpoint(tablet) {
+			padding: 0;
+		}
+	}
+	.profile-pic {
+		width: 100%;
+		height: auto;
+		position: relative;
+		border-radius: 3px;
+		@include breakpoint(tablet) {
+			float: left;
+			max-width: 250px;
+			margin-top: -125px;
+			border: 5px solid #fff;
+			box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+}

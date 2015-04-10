@@ -31,6 +31,7 @@ h2 {
 .wrapper {
 	max-width: 1140px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .header-main {
@@ -38,19 +39,25 @@ h2 {
 	padding: 15px 0;
 	background: #2c4055;
 	form {
-		float: left;
-		margin: 0px 10px 3px 50px;
+		@include breakpoint(tablet) {
+			float: left;
+			margin: 0px 10px 3px 50px;
+		}
 		input[type="text"] {
-			min-width: 250px;
 			padding: 8px 10px;
 			border: 0 none;
 			border-radius: 3px;
-			margin: 0 8px;
 			font-size: 18px;
+			width: 100%;
+			margin: 5px 0;
+			@include breakpoint(tablet) {
+				margin: 0 8px;
+				width: auto;
+				min-width: 250px;
+			}
 		}
 		button {
 			border: 0 none; 
-			margin: 0 5px;
 			border-radius: 3px;
 			padding: 10px;
 			color: #fff;
@@ -58,16 +65,24 @@ h2 {
 			cursor: pointer;
 			font-size: 16px;
 			font-weight: bold;
+			width: 100%;
+			margin: 5px 0;
+			@include breakpoint(tablet) {
+				margin: 0 5px;
+				width: auto;
+			}
 			&:hover {
 				background: #27a370;
 			}
 		}
 	}
 	a.login {
-		float: right;
 		color: #fff;
 		text-decoration: none;
 		line-height: 40px;
+		@include breakpoint(tablet) {
+			float: right;
+		}
 		&:hover {
 			color: #35c187;
 		}
@@ -76,6 +91,7 @@ h2 {
 
 .logo {
 	float: left;
+	margin: 2px;
 	img {
 		max-width: 250px;
 		height: auto;
