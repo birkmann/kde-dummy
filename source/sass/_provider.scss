@@ -1,6 +1,7 @@
 .page-provider {
 	header {
 		@include clearfix;
+		margin: 0 0 50px;
 		.title {
 			@include breakpoint(tablet) {
 				float: left;
@@ -33,6 +34,27 @@
 			margin-top: -125px;
 			border: 5px solid #fff;
 			box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+
+.ratings {
+	@include clearfix;
+	.best-ratings {
+		@include breakpoint(tablet) {
+			@include span(8);
+		}
+	}
+	.newest-ratings {
+		@include breakpoint(tablet) {
+			@include span(4 last);
+		}
+	}
+	.rating {
+		padding: 25px 0;
+		border-bottom: 1px solid #eee;
+		&:last-child {
+			border-bottom: 0 none;
 		}
 	}
 }
