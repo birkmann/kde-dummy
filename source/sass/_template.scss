@@ -116,6 +116,9 @@ a {
 	a {
 		text-decoration: none;
 		color: #fff;
+		&:hover {
+			color: #35c187;
+		}
 	}
 	ul {
 		margin: 0;
