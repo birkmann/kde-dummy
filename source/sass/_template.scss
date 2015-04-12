@@ -32,6 +32,13 @@ address {
 	font-style: normal;
 }
 
+a {
+	color: #004b91;
+	&:hover {
+		color: #e47b13;
+	}
+}
+
 .wrapper {
 	max-width: 1140px;
 	margin: 0 auto;

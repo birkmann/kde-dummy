@@ -9,8 +9,8 @@
 			}
 			h2 {
 				line-height: 1.2em;
-  				font-size: 36px;
-  				margin: 0;
+				font-size: 36px;
+				margin: 0;
 			}
 			.venue {
 				color: #888;
@@ -56,5 +56,54 @@
 		&:last-child {
 			border-bottom: 0 none;
 		}
+		.date {
+			color: #aaa;
+		}
+		.user {
+			text-decoration: none;
+		}
+		.report-abuse {
+			text-decoration: none;
+		}
+	}
+}
+
+.star {
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	color: #ffbb00;
+	span {
+		font-size: 0;
+	}
+	&.star_1:before {
+		content: '\f005'
+	}
+	&.star_1_5:before {
+		content: '\f005\f123'
+	}
+	&.star_2:before {
+		content: '\f005\f005'
+	}
+	&.star_2_5:before {
+		content: '\f005\f005\f123'
+	}
+	&.star_3:before {
+		content: '\f005\f005\f005'
+	}
+	&.star_3_5:before {
+		content: '\f005\f005\f005\f123'
+	}
+	&.star_4:before {
+		content: '\f005\f005\f005\f005'
+	}
+	&.star_4_5:before {
+		content: '\f005\f005\f005\f005\f123'
+	}
+	&.star_5:before {
+		content: '\f005\f005\f005\f005\f005'
 	}
 }
